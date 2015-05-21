@@ -1,48 +1,137 @@
 % In your .tex file
-% !TEX program = pdflatex
+% !TEX program = lualatex
 
-\documentclass[a0paper]{tikzposter} %Options for format can be included here
-
+\documentclass[a0paper, 25pt]{tikzposter} %Options for format can be included here
+\usepackage{fontspec}
+\usepackage{authblk}
+\usepackage{amsmath}
+\makeatletter
+\input{fontfile28pt.clo}
+\makeatother
+\setmainfont{Ubuntu}
  % Title, Author, Institute
-\title{Alchemical binding free energy calculations beyond the simplest models}
-\author{Bas Rustenburg}
-\institute{Memorial Sloan-Kettering Cancer Center, Chodera Lab}
+\title{\parbox{\linewidth}{\centering \Large Challenges in quantitative approaches to protein-ligand binding: Studies using isothermal titration calorimetry and alchemical binding free energy calculations}}
+
+\author[1]{Bas Rustenburg}
+\author[1]{John Chodera}
+\author[2]{David Minh}
+\affil[1]{Memorial Sloan-Kettering Cancer Center}
+\affil[2]{Illinois Institute of Technology}
+
+
 \titlegraphic{\includegraphics{MSKCC_symbol_inv.png}}
  %Choose Layout
-\usetheme{Wave}
-\usecolorstyle{Denmark}
+\usetheme{Envelope}
+\usecolorstyle[colorOne=green!40!brown!50,colorTwo=red!5!black!95,colorThree=green]{Denmark}
+\usepackage[	backend=biber,
+		language=auto,
+		firstinits=true,
+		style=numeric-comp,
+		sorting=none,
+		url=false,
+		isbn=false,
+		autopunct]{biblatex}
+
+\addbibresource{ace.bib}
+
+\makeatletter
+\def\maketitle{\AB@maketitle}
+\makeatother
+
 \begin{document}
 
  % Title block with title, author, logo, etc.
 \maketitle
- \block{Basic Block}{Text}
+ \block{Introduction}{
+ Among the most fundamental molecular interactions in biology are those of small molecules with their proteins.
+  %
+  Endogenous small molecules play the role of messengers in many signaling pathways of the cell, and small molecule drugs interact with proteins in signaling cascades to modulate their function.
+%
+  \textbf{  Despite having catalogued many of the physical driving forces behind small molecule recognition, there are enormous gaps in our knowledge preventing us from articulating a quantitative, predictive understanding of small molecule affinities and selectivities for biomolecules.
+  }
+  In principle, \textit{alchemical free energy calculations} provide a framework for quantitatively describing all aspects of the thermodynamics of small molecule recognition.
+%
+  However, deficiencies in our quantitative understanding of binding create large challenges in the ability of these calculations to reproduce experimental affinities in many systems, holding back their use in probing function and aiding design.
+%
+
+ }
  \begin{columns}
 
  % FIRST column
-\column{0.6}% Width set relative to text width
+\column{0.33}% Width set relative to text width
 
-\block{Large Column}{Text\\Text\\Text Text Text}
-\note{Note with default behavior}
-\note[targetoffsetx=12cm, targetoffsety=-1cm, angle=20, rotate=25]
-{Note \\ offset and rotated}
+\block{Issues with experiments: Improper uncertainty estimation}{
+	\begin{tikzfigure}[ \small Binding measurements of CBS to bovine carbonic anhydrase II from the ABRF-MIRG'2 study. \textbf{Independent ITC as performed by 14 labs shows individual error estimates are orders of magnitude smaller than actual experimental variation.} A: Predicted stoichiometry of binding. B: Association constant $K_\mathrm{A}$. C: enthalpic contribution to binding. D: Measured extinction coefficient of ligand CBS, as reported by the 14 participants~\autocite{Myszka2003a}.]
+	\includegraphics[width=\linewidth]{figures/cbs_ca_II.PNG}
+	\end{tikzfigure}
+
+}
 
  % First column - second block
-\block{Block titles with enough text will automatically obey spacing requirements }
-{Text\\Text}
+\block{Reliable baseline estimates}{
+\begin{tikzfigure}[We apply Gaussian process regression to increase the reliability of our baseline estimates.]
+ \includegraphics[width=\linewidth]{figures/baseline.png}
+\end{tikzfigure}
+
+
+}
 
  % First column - third block
 \block{Sample Block 4}{T\\E\\S\\T}
 
  % SECOND column
-\column{0.4}
+\column{0.33}
  %Second column with first block's top edge aligned with with previous column's top.
 
  % Second column - first block
-\block[titleleft]{Smaller Column}{Test}
+\block{A typical ITC experiment}{
+\begin{tikzfigure}[\small In an ITC experiment, we inject from a syringe into a sample cell several times, measuring a differential power, and then integrating over that to obtain the heat of the injection, $q_n^\mathrm{obs}$.]
+\includegraphics[width=\linewidth]{figures/itcexp.png}
+\end{tikzfigure}
+}
 
- % Second column - second block
-\block[titlewidthscale=0.6, bodywidthscale=0.8]
-{Variable width title}{Block with smaller width.}
+
+ % Second column - first block
+\block{Posterior predictions of injected heats}{
+\begin{tikzfigure}[\small Our observations (red dots) and our sampled posterior heats (violins) provide us with new estimates plus credible intervals. ]
+\includegraphics[width=\linewidth]{figures/postpredictive.png}
+\end{tikzfigure}
+}
+
+
+% Third column
+\column{0.33}
+
+\block{From likelihood to posterior density}{
+Using Bayes rule, we can obtain a posterior distribution $\mathcal{P}\left(\theta | \mathcal{D} \right)$
+\begin{align}
+	\mathcal{P}\left(\theta | \mathcal{D} \right) \propto  \mathcal{P}(\mathcal{D} | \theta) \mathcal{P}\left(\theta\right) \quad .
+\end{align}
+Here, $\mathcal{P}\left(\theta\right)$ is a prior density of our parameters:
+\begin{align}
+	\theta   =  \left\{ \Delta G_\mathrm{bind}, \Delta H_\mathrm{bind}, \Delta H_0, [\mathrm{X_{syr}}], [\mathrm{M_{cell}}], \sigma \right\} \quad,
+\end{align}
+for which the distributions can be defined using prior knowledge about errors made by instrumentation.
+
+
+}
+
+\block{Modeling the likelihood of the integrated heats}{
+According to the central limit theorem (CLT), we can model the integrated heats as being samples from a normal distribution $\mathcal{N}$,
+\begin{align}
+q_n^\mathrm{obs} \sim \mathcal{N}(q_n^\mathrm{true}, \sigma^2) \quad ,
+\end{align}
+with the true heats $q_n^\mathrm{true}$ as a mean, with a variance of $\sigma^2$.
+}
+
+
+\block[]{Markov chain Monte Carlo gives us probabilities for all our parameters}{
+  \begin{tikzfigure}[An example distribution sampled for the syringe concentration.]
+   \includegraphics[width=\linewidth]{figures/sampling.png}
+  \end{tikzfigure}
+
+}
+
 
  % Second column - third block
 \block{}{Block with no title}
@@ -54,15 +143,16 @@
     \subcolumn{0.33} \block{4}{Fourth} \block{}{Final Subcolumn block}
 \end{subcolumns}
 
+
  % Bottomblock
-\block{Final Block in column}{
-    Sample block.
+\block{Conclusions}{ here is some text
 }
 \end{columns}
 \block[titleleft, titleoffsetx=2em, titleoffsety=1em, bodyoffsetx=2em,%
  bodyoffsety=-2cm, roundedcorners=10, linewidth=0mm, titlewidthscale=0.7,%
  bodywidthscale=0.9, bodyverticalshift=2cm, titleright]
-{Block outside of Columns}{Along with several options enabled}
+{References}{    \printbibliography[heading=none]
+}
 
 \end{document}
 

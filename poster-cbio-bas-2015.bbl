@@ -1,0 +1,155 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.4 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{none}{none}
+    \entry{Pedregosa2011a}{article}{}
+      \name{labelname}{16}{}{%
+        {{hash=22e2e571cc6356b3cb21d40e212ca6ac}{Pedregosa}{P\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=90a0a2720bfe73efd4029f8a456cdcc3}{Varoquaux}{V\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=386dd6e7464b390d92ce58cf04ba101c}{Gramfort}{G\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=ce3bf798cb091d3910827d51160fe0f8}{Michel}{M\bibinitperiod}{V.}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=b8fa2de348731073d50b89e07267e159}{Thirion}{T\bibinitperiod}{B.}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=1c2f66c39a6e2b2ca4d545348028a677}{Grisel}{G\bibinitperiod}{O.}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=f5652799b846fbd40ce19b83c70ef1d3}{Blondel}{B\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=8d2ca4be32fef4d9e848709878fcb757}{Prettenhofer}{P\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=56ac3785f81550a29a28d3abd746ecff}{Weiss}{W\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=cb070bdb80f3a6add15c62ca13a4a419}{Dubourg}{D\bibinitperiod}{V.}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=f1aa9e81c02f406a26762c8c85fdc1fb}{Vanderplas}{V\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=35a7037441ee9fd7ca45c2216a9cb080}{Passos}{P\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=39b253ebe84b96f6acd07b762d251ca1}{Cournapeau}{C\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=3c836162a7c1b02a3454bb2df2c57303}{Brucher}{B\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=980c432be67e1ca5879a0aee315ff2a9}{Perrot}{P\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=ad11ee93370bf63bb64684cfdff0836f}{Duchesnay}{D\bibinitperiod}{E.}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{16}{}{%
+        {{hash=22e2e571cc6356b3cb21d40e212ca6ac}{Pedregosa}{P\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=90a0a2720bfe73efd4029f8a456cdcc3}{Varoquaux}{V\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=386dd6e7464b390d92ce58cf04ba101c}{Gramfort}{G\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=ce3bf798cb091d3910827d51160fe0f8}{Michel}{M\bibinitperiod}{V.}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=b8fa2de348731073d50b89e07267e159}{Thirion}{T\bibinitperiod}{B.}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=1c2f66c39a6e2b2ca4d545348028a677}{Grisel}{G\bibinitperiod}{O.}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=f5652799b846fbd40ce19b83c70ef1d3}{Blondel}{B\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=8d2ca4be32fef4d9e848709878fcb757}{Prettenhofer}{P\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=56ac3785f81550a29a28d3abd746ecff}{Weiss}{W\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=cb070bdb80f3a6add15c62ca13a4a419}{Dubourg}{D\bibinitperiod}{V.}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=f1aa9e81c02f406a26762c8c85fdc1fb}{Vanderplas}{V\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=35a7037441ee9fd7ca45c2216a9cb080}{Passos}{P\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=39b253ebe84b96f6acd07b762d251ca1}{Cournapeau}{C\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=3c836162a7c1b02a3454bb2df2c57303}{Brucher}{B\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=980c432be67e1ca5879a0aee315ff2a9}{Perrot}{P\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=ad11ee93370bf63bb64684cfdff0836f}{Duchesnay}{D\bibinitperiod}{E.}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7f03c9665977d16cca3f7d744a8a06df}
+      \strng{fullhash}{81371d66ce2cfb28d217f955948ace55}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Scikit-learn: Machine Learning in {P}ython}
+      \field{journaltitle}{J Mach Learn Res}
+      \field{title}{Scikit-learn: Machine Learning in {P}ython}
+      \field{volume}{12}
+      \field{year}{2011}
+      \field{pages}{2825\bibrangedash 2830}
+    \endentry
+    \entry{Myszka2003a}{article}{}
+      \name{labelname}{11}{}{%
+        {{hash=6fc0478e3db6cab2a17954f81f8f1489}{Myszka}{M\bibinitperiod}{D.\bibnamedelimi G.}{D\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=c53efd8f959b1548f66ea3e3703bc061}{Abdiche}{A\bibinitperiod}{Y.\bibnamedelimi N.}{Y\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+        {{hash=99e57f7b902384d065e6ba6839608c85}{Arisaka}{A\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=242c0627abdea3446aeba2af374df517}{Byron}{B\bibinitperiod}{O.}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=bd3a964314fb3b570d745da536f27ea5}{Eisenstein}{E\bibinitperiod}{E.}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=fba08ae476fa0278cebf59b37642e247}{Hensley}{H\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=f60ba412a43aa9b23e8789a4fd9bced1}{Thomson}{T\bibinitperiod}{J.\bibnamedelimi A.}{J\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=c0047d8c201e4aadd20a7240f87ca505}{Lombardo}{L\bibinitperiod}{C.\bibnamedelimi R.}{C\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=edd7ddf7306f801a301a3cd23f3296bf}{Schwarz}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=7f22122cec34a4d5b064159a1a12d871}{Stafford}{S\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=13b6d334f59bcfe16b97c49d536d17f5}{Doyle}{D\bibinitperiod}{M.\bibnamedelimi L.}{M\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{11}{}{%
+        {{hash=6fc0478e3db6cab2a17954f81f8f1489}{Myszka}{M\bibinitperiod}{D.\bibnamedelimi G.}{D\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=c53efd8f959b1548f66ea3e3703bc061}{Abdiche}{A\bibinitperiod}{Y.\bibnamedelimi N.}{Y\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+        {{hash=99e57f7b902384d065e6ba6839608c85}{Arisaka}{A\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=242c0627abdea3446aeba2af374df517}{Byron}{B\bibinitperiod}{O.}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=bd3a964314fb3b570d745da536f27ea5}{Eisenstein}{E\bibinitperiod}{E.}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=fba08ae476fa0278cebf59b37642e247}{Hensley}{H\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=f60ba412a43aa9b23e8789a4fd9bced1}{Thomson}{T\bibinitperiod}{J.\bibnamedelimi A.}{J\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=c0047d8c201e4aadd20a7240f87ca505}{Lombardo}{L\bibinitperiod}{C.\bibnamedelimi R.}{C\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=edd7ddf7306f801a301a3cd23f3296bf}{Schwarz}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=7f22122cec34a4d5b064159a1a12d871}{Stafford}{S\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=13b6d334f59bcfe16b97c49d536d17f5}{Doyle}{D\bibinitperiod}{M.\bibnamedelimi L.}{M\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {University of Utah, Salt Lake City, Utah 84132, USA. david.myszka@cores.utah.edu}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \strng{namehash}{049b116a629ce8f874e05ca3181bef94}
+      \strng{fullhash}{eff03fce2bf1e0f2bf027a4ed83d039e}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{The ABRF-MIRG'02 study: assembly state, thermodynamic, and kinetic analysis of an enzyme/inhibitor interaction.}
+      \field{abstract}{Fully characterizing the interactions involving biomolecules requires information on the assembly state, affinity, kinetics, and thermodynamics associated with complex formation. The analytical technologies often used to measure biomolecular interactions include analytical ultracentrifugation (AUC), isothermal titration calorimetry (ITC), and surface plasmon resonance (SPR). In order to evaluate the capabilities of core facilities to implement these technologies, the Association of Biomolecular Resource Facilities (ABRF) Molecular Interactions Research Group (MIRG) developed a standardized model system and distributed it to a panel of AUC, ITC, and SPR operators. The model system was composed of a well-characterized enzyme-inhibitor pair, namely bovine carbonic anhydrase II (CA II) and 4-carboxybenzenesulfonamide (CBS). Study participants were asked to measure one or more of the following: (1) the molecular mass, homogeneity, and assembly state of CA II by AUC; (2) the affinity and thermodynamics for complex formation by ITC; and (3) the affinity and kinetics of complex formation by SPR. The results from this study provide a benchmark for comparing the capabilities of individual laboratories and for defining the utility of the different instrumentation.}
+      \field{journaltitle}{J Biomol Tech}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{The ABRF-MIRG'02 study: assembly state, thermodynamic, and kinetic analysis of an enzyme/inhibitor interaction.}
+      \field{volume}{14}
+      \field{year}{2003}
+      \field{pages}{247\bibrangedash 269}
+      \verb{url}
+      \verb http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2279960/
+      \endverb
+      \keyw{Animals; Calorimetry,Differential Scanning; Carbonic Anhydrase II,chemistry/drug effects; Cattle; Enzyme Inhibitors,pharmacology; Kinetics; Molecular Weight; Sulfonamides,chemistry/pharmacology; Surface Plasmon Resonance; Thermodynamics; Ultracentrifugation}
+    \endentry
+    \entry{Patil2010a}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=ad49db79a57a54e61ff4af71c2fc5c7d}{Patil}{P\bibinitperiod}{Anand}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=cde14147f7e9cba79a53e61ec77fc29c}{Huard}{H\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=fb4f4a6aed96972e4032224fb653b302}{Fonnesbeck}{F\bibinitperiod}{Christopher\bibnamedelima J.}{C\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=ad49db79a57a54e61ff4af71c2fc5c7d}{Patil}{P\bibinitperiod}{Anand}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=cde14147f7e9cba79a53e61ec77fc29c}{Huard}{H\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=fb4f4a6aed96972e4032224fb653b302}{Fonnesbeck}{F\bibinitperiod}{Christopher\bibnamedelima J.}{C\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Malaria Atlas Project University of Oxford Oxford, United Kingdom anand.prabhakar.patil@gmail.com.}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \strng{namehash}{90d01c778132dcbbd2bb4572e9501ef6}
+      \strng{fullhash}{90d01c778132dcbbd2bb4572e9501ef6}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{PyMC: Bayesian Stochastic Modelling in Python.}
+      \field{abstract}{This user guide describes a Python package, PyMC, that allows users to efficiently code a probabilistic model and draw samples from its posterior distribution using Markov chain Monte Carlo techniques.}
+      \field{journaltitle}{J Stat Softw}
+      \field{month}{07}
+      \field{number}{4}
+      \field{title}{PyMC: Bayesian Stochastic Modelling in Python.}
+      \field{volume}{35}
+      \field{year}{2010}
+      \field{pages}{1\bibrangedash 81}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

@@ -1,0 +1,15 @@
+[0] Config.pm:321> INFO - This is Biber 1.9
+[0] Config.pm:324> INFO - Logfile is 'cbio-postertemplate.blg'
+[24] biber:277> INFO - === Mon May 18, 2015, 21:53:25
+[24] Biber.pm:334> INFO - Reading 'cbio-postertemplate.bcf'
+[80] Biber.pm:636> INFO - Found 1 citekeys in bib section 0
+[97] Biber.pm:3052> INFO - Processing section 0
+[115] Biber.pm:3190> INFO - Looking for bibtex format file 'ace.bib' for section 0
+[133] bibtex.pm:979> INFO - Decoding LaTeX character macros into UTF-8
+[153] bibtex.pm:853> INFO - Found BibTeX data source 'ace.bib'
+[183] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[183] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[183] Biber.pm:2929> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-US'
+[183] Biber.pm:2933> INFO - No sort tailoring available for locale 'en-US'
+[185] bbl.pm:517> INFO - Writing 'cbio-postertemplate.bbl' with encoding 'UTF-8'
+[186] bbl.pm:606> INFO - Output to cbio-postertemplate.bbl
